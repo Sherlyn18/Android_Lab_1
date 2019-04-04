@@ -3,6 +3,7 @@ package com.abc.helloword;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
+import android.view.View;
 import android.widget.TextView;
 
 public class MessageActivity extends AppCompatActivity {
@@ -17,4 +18,14 @@ public class MessageActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.display_message);
         textView.setText(message);
     }
+
+    public void goFinalActivity(View view) {
+        Intent intent = new Intent( getApplicationContext(), FinalActivity.class);
+        startActivity(intent);
+
+
+
+    }
 }
+
+
